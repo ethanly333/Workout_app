@@ -49,6 +49,11 @@ const HOMESTYLE = StyleSheet.create({
       justifyContent: 'center',
       borderRadius: 10,
     },
+
+    randomizeTxt: {
+      color: 'black',
+      fontSize: 18,
+    }
 });
 
 export { HOMESTYLE } ;
