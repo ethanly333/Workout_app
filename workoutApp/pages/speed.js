@@ -1,8 +1,16 @@
-import { StyleSheet, Text, SafeAreaView, TouchableOpacity, Image, Button } from 'react-native' ;
+import { Text, SafeAreaView, ScrollView,
+    TouchableOpacity, Image, Button } from 'react-native' ;
+import { SPEEDSTYLE } from '../stylesheets/speedStyle' ;
 
-const SpeedScreen = () =>
+export default function SpeedScreen()
 {
-    <Text>Hello</Text>
-}
-
-export default SpeedScreen ;
+    return (
+    <SafeAreaView style={SPEEDSTYLE.mainContainer}>
+        <SafeAreaView>
+            <ScrollView>
+                    
+            </ScrollView>
+        </SafeAreaView>
+    </SafeAreaView>
+    )
+}//end SpeedScreen

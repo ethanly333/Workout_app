@@ -1,8 +1,16 @@
-import { StyleSheet, Text, SafeAreaView, TouchableOpacity, Image, Button } from 'react-native' ;
+import { Text, SafeAreaView, ScrollView,
+    TouchableOpacity, Image } from 'react-native' ;
+import { FLEXIBILITYSTYLE } from '../stylesheets/flexibilityStyle';
 
-const FlexibilityScreen = () =>
+export default function FlexibilityScreen()
 {
-    <Text>Hello</Text>
-}
-
-export default FlexibilityScreen ;
+    return (
+    <SafeAreaView style={FLEXIBILITYSTYLE.mainContainer}>
+        <SafeAreaView>
+            <ScrollView>
+                    
+            </ScrollView>
+        </SafeAreaView>
+    </SafeAreaView>
+    )
+}//end flexibilityScreen

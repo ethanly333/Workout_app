@@ -1,8 +1,16 @@
-import { StyleSheet, Text, SafeAreaView, TouchableOpacity, Image, Button } from 'react-native' ;
+import { Text, SafeAreaView, ScrollView,
+         TouchableOpacity, Image, Button } from 'react-native' ;
+import { STRENGTHSTYLE } from '../stylesheets/strengthStyle';
 
-const StrengthScreen = () =>
+export default function StrengthScreen()
 {
-    <Text>Hello</Text>
-}
-
-export default StrengthScreen ;
+    return (
+        <SafeAreaView style={STRENGTHSTYLE.mainContainer}>
+            <SafeAreaView>
+                <ScrollView>
+                     
+                </ScrollView>
+            </SafeAreaView>
+        </SafeAreaView>
+    )
+}//end StrengthScreen

@@ -1,11 +1,11 @@
 import { Text, SafeAreaView, ScrollView,
     TouchableOpacity, Image } from 'react-native' ;
-import { AGILITYSTYLE } from '../stylesheets/agilityStyle';
+import { FLEXIBILITYSTYLE } from '../stylesheets/flexibilityStyle';
 
-export default function AgilityScreen()
+export default function RandomScreen()
 {
     return (
-    <SafeAreaView style={AGILITYSTYLE.mainContainer}>
+    <SafeAreaView style={RANDOMSTYLE.mainContainer}>
         <SafeAreaView>
             <ScrollView>
                     
@@ -13,4 +13,4 @@ export default function AgilityScreen()
         </SafeAreaView>
     </SafeAreaView>
     )
-}//end AgilityScreen
+}//end randomScreen
