@@ -1,29 +1,64 @@
-import { StrengthScreen } from './pages/strength.js';
-import { AgilityScreen } from './pages/mobility_agility.js';
-import { FlexibilityScreen } from './pages/balance_flex.js';
-import { SpeedScreen } from './pages/speed.js';
-import { HomeScreen } from './pages/home.js' ;
+import StrengthScreen from '../pages/strength.js';
+import AgilityScreen from '../pages/mobility_agility.js';
+import FlexibilityScreen from '../pages/balance_flex.js';
+import SpeedScreen from '../pages/speed.js';
+import HomeScreen from '../pages/home.js' ;
 import { createAppContainer } from 'react-navigation';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createStackNavigator } from 'react-navigation-stack' ;
 
 const screens = {
   Home: {
-    screen: HomeScreen
+    screen: HomeScreen,
+    navigationOptions: {
+        headerTitle: 'Workouts',
+        headerStyle: {
+            backgroundColor: '#080808',
+        },
+        headerTintColor: 'white'
+    }
   },
   Strength: {
-    screen: StrengthScreen
+    screen: StrengthScreen,
+    navigationOptions: {
+        headerTitle: 'Strength',
+        headerStyle: {
+            backgroundColor: '#080808'
+        },
+        headerTintColor: 'white'
+    }
   },
   Agility: {
-    screen: AgilityScreen
+    screen: AgilityScreen,
+    navigationOptions: {
+        headerTitle: 'Agility',
+        headerStyle: {
+            backgroundColor: '#080808'
+        },
+        headerTintColor: 'white'
+    }
   },
   Flexibility: {
-    screen: FlexibilityScreen
+    screen: FlexibilityScreen,
+    navigationOptions: {
+        headerTitle: 'Flexibility',
+        headerStyle: {
+            backgroundColor: '#080808'
+        },
+        headerTintColor: 'white'
+    }
   },
   Speed: {
-    screen: SpeedScreen
-  },
+    screen: SpeedScreen,
+    navigationOptions: {
+        headerTitle: 'Speed',
+        headerStyle: {
+            backgroundColor: '#080808',
+        },
+        headerTintColor: 'white'
+    }
+  }
 }
 
-const Stack = createNativeStackNavigator(screens) ;
+const Stack = createStackNavigator(screens) ;
 
 export default createAppContainer(Stack) ;
