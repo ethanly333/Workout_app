@@ -1,95 +1,18 @@
-import { StatusBar } from 'expo-status-bar' ;
-import { StyleSheet, Text, SafeAreaView, TouchableOpacity, Image, Button } from 'react-native' ;
+import { StatusBar } from 'expo-status-bar';
+import { Expo } from 'expo';
+import { createAppContainer } from 'react-navigation';
+import { NavigationContainer } from '@react-navigation/native' ;
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { StyleSheet, Text, SafeAreaView, TouchableOpacity, Image, Button } from 'react-native';
+import StrengthScreen from './pages/strength.js';
+import { AgilityScreen } from './pages/mobility_agility.js';
+import { FlexibilityScreen } from './pages/balance_flex.js';
+import { SpeedScreen } from './pages/speed.js';
+import HomeScreen from './pages/home.js' ;
+import Navigator from './routes/appStack.js' ;
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
-      <Text style={styles.title}>Tennis Workouts</Text>
-      <SafeAreaView style={styles.btnContainer}>
-        <TouchableOpacity style={styles.exerciseBtn}>
-          <Image 
-            style = {styles.exerciseIcon}
-            source = {require('./assets/strength.png')}
-          />
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.exerciseBtn}>
-          <Image 
-            style = {styles.exerciseIcon}
-            source = {require('./assets/speed.png')}
-          />
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.exerciseBtn}>
-          <Image 
-            style = {styles.exerciseIcon}
-            source = {require('./assets/flexibility.png')}
-          />
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.exerciseBtn}>
-          <Image 
-            style = {styles.exerciseIcon}
-            source = {require('./assets/agility.png')}
-          />
-        </TouchableOpacity>
-      </SafeAreaView>
-      <SafeAreaView style={styles.randomizeBtn}>
-        <Button
-          title='Randomize'
-          color='black'
-          fontWeight='bold'
-        />
-      </SafeAreaView>
-
-    </SafeAreaView>
-  ) ;
+    <Navigator/>
+  );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#080808',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-
-  title: {
-    fontSize: 30,
-    fontFamily: 'AlNile-Bold',
-    color: '#f5f5f5',
-    margin: 25, 
-  },
-
-   btnContainer: {
-    flex: 1,
-    flexDirection: 'row',
-    marginHorizontal: 10, 
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexWrap: 'wrap',
-    marginTop: 50,
-   },
-
-  exerciseBtn: {
-    height: 150,
-    width: 150,
-    backgroundColor: '#404b0e',
-    borderRadius: 15, 
-    margin: 20,
-    padding: 5,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-
-  exerciseIcon: {
-    height: 110,
-    width: 110,
-  },
-
-  randomizeBtn: {
-    height: 50,
-    width: 180,
-    backgroundColor: '#c752b1',
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderRadius: 10,
-  },
-}) ;
