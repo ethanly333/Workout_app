@@ -1,6 +1,6 @@
 import StrengthScreen from '../pages/strength.js';
-import AgilityScreen from '../pages/mobility_agility.js';
-import FlexibilityScreen from '../pages/balance_flex.js';
+import AgilityScreen from '../pages/agility.js';
+import FlexibilityScreen from '../pages/flexibility.js';
 import SpeedScreen from '../pages/speed.js';
 import HomeScreen from '../pages/home.js' ;
 import { createAppContainer } from 'react-navigation';
