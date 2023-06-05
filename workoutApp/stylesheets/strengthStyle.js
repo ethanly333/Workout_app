@@ -21,7 +21,29 @@ const STRENGTHSTYLE = StyleSheet.create({
       justifyContent: 'center',
       margin: 20, 
       borderRadius: 10,
+    },
 
+    listIcon: {
+      marginRight: 10, 
+    },
+
+    mainBtns: {
+      height: 75,
+      width: 400,
+      backgroundColor: '#545454',
+      alignItems: 'center',
+      justifyContent: 'center',
+      margin: 20, 
+      borderRadius: 10,
+
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'center',
+    }, 
+
+    mainText: {
+      color: 'black',
+      fontSize: 30,
     },
 
 });
