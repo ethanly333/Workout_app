@@ -28,7 +28,7 @@ const HOMESTYLE = StyleSheet.create({
     exerciseBtn: {
       height: 150,
       width: 150,
-      backgroundColor: '#404b0e',
+      backgroundColor: '#5B6B14', 
       borderRadius: 15,
       margin: 20,
       padding: 5,
