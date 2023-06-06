@@ -55,7 +55,7 @@ export default function GenerateStrengthSCreen()
                 <SafeAreaView style={STRENGTHSTYLE.workoutModalContainer}>
                     <ScrollView>
                     {workoutState.map((exercise) =>     
-                        <SafeAreaView>
+                        <SafeAreaView key={`${exercise.title} - mainKey`}>
                             <TouchableOpacity style={STRENGTHSTYLE.workoutModalBtns}>
                                 <Text style={{
                                     fontSize: 23,
