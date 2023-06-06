@@ -4,30 +4,34 @@ import Modal from 'react-native-modal';
 import { STRENGTHSTYLE } from '../stylesheets/strengthStyle';
 import { strengthWorkouts } from '../data/workouts';
 
-export default function StrengthScreen() {
+export default function StrengthScreen({navigation}) 
+{
     const [descModalState, setDescModalState] = useState(false);
     const [listModalState, setListModalState] = useState(false) ;
 
-    const [curTitle, setCurTitle] = useState('');
-    const [curDesc, setCurDesc] = useState('');
+    const listBtnHandler = () => 
+    {
+        navigation.navigate('StrengthList') ;
+    }//end listBtnHandler
 
-    const displayDescPopup = (title, desc) => {
-        setCurTitle(title);
-        setCurDesc(desc);
-        setDescModalState(true);
-    }//end exerciseHandler
+    const generateBtnHandler = () =>
+    {
+        navigation.navigate('GenerateStrength') ;
+    }//end generateBtnHandler
 
-    const displayListPopup = () => {
+    const displayListPopup = () => 
+    {
         setListModalState(true) ;
-    }
+    }; //end displayListPopup
 
     return (
         <SafeAreaView style={STRENGTHSTYLE.mainContainer}>
             <ScrollView>
                 <SafeAreaView>
                     <TouchableOpacity
+                        //This is the button for exercise list
                         style = {STRENGTHSTYLE.mainBtns}
-                        onPress = {() => {displayListPopup}}
+                        onPress = {listBtnHandler}
                     >
                             <Image 
                                 style = {STRENGTHSTYLE.listIcon}
@@ -35,29 +39,29 @@ export default function StrengthScreen() {
                             />
                             <Text style={STRENGTHSTYLE.mainText}>Exercise List</Text>
                     </TouchableOpacity>
-                    <Modal
-                        isVisible = {listModalState}
-                        onBackdropPress={() => { setListModalState(false); }}
+
+                    <TouchableOpacity
+                        //This is the button for exercise list
+                        style = {STRENGTHSTYLE.mainBtns}
+                        onPress = {generateBtnHandler}
                     >
-                    {strengthWorkouts.map((exercise) =>
-                        <SafeAreaView key={`${exercise.title} - mainKey`}>
-                            <TouchableOpacity
-                                style={STRENGTHSTYLE.exerciseContainer}
-                                onPress={() => displayDescPopup(exercise.title, exercise.description)}
-                            >
-                                <Text style={STRENGTHSTYLE.exercise}>{exercise.title}</Text>
-                            </TouchableOpacity>
-                            <Modal
-                                isVisible={descModalState}
-                                onBackdropPress={() => { setDescModalState(false); }}
-                            >
-                                <SafeAreaView>
-                                    <Text style={STRENGTHSTYLE.exercise}>{curDesc}</Text>
-                                </SafeAreaView>
-                            </Modal>
-                        </SafeAreaView>
-                    )}
-                    </Modal>
+                            <Image 
+                                style = {STRENGTHSTYLE.listIcon}
+                                source = {require('../assets/diceIcon.png')}
+                            />
+                            <Text style={STRENGTHSTYLE.mainText}>Generate Workout</Text>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity
+                        //This is the button for exercise list
+                        style = {STRENGTHSTYLE.mainBtns}
+                    >
+                            <Image 
+                                style = {STRENGTHSTYLE.listIcon}
+                                source = {require('../assets/dumbbellIcon.png')}
+                            />
+                            <Text style={STRENGTHSTYLE.mainText}>Custom Workout</Text>
+                    </TouchableOpacity>
                 </SafeAreaView>
             </ScrollView>
         </SafeAreaView>

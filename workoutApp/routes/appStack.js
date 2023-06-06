@@ -5,6 +5,8 @@ import SpeedScreen from '../pages/speed.js';
 import HomeScreen from '../pages/home.js' ;
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack' ;
+import StrengthListScreen from '../pages/strengthList.js';
+import GenerateStrengthSCreen from '../pages/generateStrength.js';
 
 const screens = {
   Home: {
@@ -56,7 +58,28 @@ const screens = {
         },
         headerTintColor: 'white'
     }
+  },
+  StrengthList: {
+    screen: StrengthListScreen,
+    navigationOptions: {
+        headerTitle: '',
+        headerStyle: {
+            backgroundColor: '#080808',
+        },
+        headerTintColor: 'white'
+    }
+  },
+  GenerateStrength: {
+    screen: GenerateStrengthSCreen,
+    navigationOptions: {
+      headerTitle: '',
+        headerStyle: {
+            backgroundColor: '#080808',
+        },
+        headerTintColor: 'white'
+    }
   }
+
 }
 
 const Stack = createStackNavigator(screens) ;
