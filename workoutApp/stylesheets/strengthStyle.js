@@ -16,7 +16,7 @@ const STRENGTHSTYLE = StyleSheet.create({
     exerciseContainer: {
       height: 75,
       width: 300,
-      backgroundColor: '#5B6B14',
+      backgroundColor: '#869D1D',
       alignItems: 'center',
       justifyContent: 'center',
       margin: 20, 
@@ -32,7 +32,7 @@ const STRENGTHSTYLE = StyleSheet.create({
       height: 75,
       width: '100%',
       alignSelf: 'center',
-      backgroundColor: '#545454',
+      backgroundColor: '#737373',
       alignItems: 'center',
       justifyContent: 'center',
       margin: 20, 
@@ -61,7 +61,24 @@ const STRENGTHSTYLE = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
       borderRadius: 10,
-    }
+    },
+
+    workoutModalContainer: {
+      backgroundColor: '#869D1D',
+      alignSelf: 'center',
+      height: 550,
+      width: '100%',
+      borderRadius: 10,
+    },
+
+    workoutModalBtns: {
+      height: 55,
+      backgroundColor: 'black',
+      margin: 15,
+      alignItems: 'center',
+      justifyContent: 'center',
+      borderRadius: 15,
+    },
 
 });
 

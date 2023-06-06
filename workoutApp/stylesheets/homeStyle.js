@@ -28,7 +28,7 @@ const HOMESTYLE = StyleSheet.create({
     exerciseBtn: {
       height: 150,
       width: 150,
-      backgroundColor: '#5B6B14', 
+      backgroundColor: '#869D1D', 
       borderRadius: 15,
       margin: 20,
       padding: 5,
@@ -52,7 +52,8 @@ const HOMESTYLE = StyleSheet.create({
 
     randomizeTxt: {
       color: 'black',
-      fontSize: 18,
+      fontSize: 23,
+      fontWeight: 600,
     }
 });
 
