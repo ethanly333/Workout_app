@@ -9,14 +9,14 @@ const STRENGTHSTYLE = StyleSheet.create({
     },
 
     exercise: {
-      color: 'white',
+      color: 'black',
       fontSize: 30,
     },
 
     exerciseContainer: {
       height: 75,
       width: 300,
-      backgroundColor: '#404b0e',
+      backgroundColor: '#5B6B14',
       alignItems: 'center',
       justifyContent: 'center',
       margin: 20, 
@@ -28,14 +28,15 @@ const STRENGTHSTYLE = StyleSheet.create({
     },
 
     mainBtns: {
+      flex: 1,
       height: 75,
-      width: 400,
+      width: '100%',
+      alignSelf: 'center',
       backgroundColor: '#545454',
       alignItems: 'center',
       justifyContent: 'center',
       margin: 20, 
       borderRadius: 10,
-
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'center',
@@ -45,6 +46,22 @@ const STRENGTHSTYLE = StyleSheet.create({
       color: 'black',
       fontSize: 30,
     },
+
+    listContainer: {
+      height: '100%', 
+      backgroundColor: '#080808', 
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+
+    generateBtn: {
+      height: 50,
+      width: 180,
+      backgroundColor: '#c752b1',
+      alignItems: 'center',
+      justifyContent: 'center',
+      borderRadius: 10,
+    }
 
 });
 
