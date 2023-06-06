@@ -16,9 +16,9 @@ export const strengthWorkouts = [
 ] ;*/
 
 export const strengthWorkouts = [
-    {title: 'lift weights', description: 'this is an exercise where you lift weights'}, 
-    {title: 'shoulder press', description: 'lift the weights over your head'},
-    {title: 'push ups', description: 'do push ups'}
+    {title: 'Front Raise', description: 'description'}, {title: 'Shoulder Press', description: 'description'}, {title: 'Push Ups', description: 'description'},
+    {title: 'Lateral Raise', description: 'description'}, {title: 'Bent-Over Rear Raise', description: 'description'}, {title: 'External Rotation', description: 'description'},
+    {title: 'Internal Rotation', description: 'description'}, {title: 'Low Row', description: 'description'},
 ] ;
 
 
