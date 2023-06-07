@@ -11,12 +11,13 @@ const STRENGTHSTYLE = StyleSheet.create({
     exercise: {
       color: 'black',
       fontSize: 30,
+      margin: 10, 
     },
 
     exerciseContainer: {
       height: 75,
       width: 300,
-      backgroundColor: '#869D1D',
+      backgroundColor: '#869D1D',                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
       alignItems: 'center',
       justifyContent: 'center',
       margin: 20, 
@@ -78,6 +79,12 @@ const STRENGTHSTYLE = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
       borderRadius: 15,
+    },
+
+    descriptionModal: {
+      backgroundColor: 'grey',
+      borderRadius: 13, 
+      height: 600,
     },
 
 });

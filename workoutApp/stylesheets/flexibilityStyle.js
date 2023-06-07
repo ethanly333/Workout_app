@@ -9,14 +9,14 @@ const FLEXIBILITYSTYLE = StyleSheet.create({
     },
 
     exercise: {
-      color: 'white',
+      color: 'black',
       fontSize: 30,
     },
 
     exerciseContainer: {
       height: 75,
       width: 300,
-      backgroundColor: '#404b0e',
+      backgroundColor: '#869D1D',
       alignItems: 'center',
       justifyContent: 'center',
       margin: 20, 
