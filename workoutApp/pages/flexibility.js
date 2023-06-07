@@ -4,7 +4,7 @@ import { FLEXIBILITYSTYLE } from '../stylesheets/flexibilityStyle';
 import { flexibilityWorkouts } from '../data/workouts' ;
 import { useState } from 'react' ;
 
-export default function FlexibilityScreen()
+export default function FlexibilityScreen({navigation})
 {
     const [descModalState, setDescModalState] = useState(false);
     const [listModalState, setListModalState] = useState(false) ;
@@ -31,6 +31,7 @@ export default function FlexibilityScreen()
                     <TouchableOpacity
                         //This is the button for exercise list
                         style = {FLEXIBILITYSTYLE.mainBtns}
+                        onPress={listBtnHandler}
                     >
                             <Image 
                                 style = {FLEXIBILITYSTYLE.listIcon}
