@@ -4,7 +4,7 @@ import { AGILITYSTYLE } from '../stylesheets/agilityStyle' ;
 import { agilityWorkouts } from '../data/workouts' ;
 import { useState } from 'react' ;
 
-export default function AgilityScreen()
+export default function AgilityScreen({navigation})
 {
     const [descModalState, setDescModalState] = useState(false);
     const [listModalState, setListModalState] = useState(false) ;
@@ -31,6 +31,7 @@ export default function AgilityScreen()
                     <TouchableOpacity
                         //This is the button for exercise list
                         style = {AGILITYSTYLE.mainBtns}
+                        onPress = {listBtnHandler}
                     >
                             <Image 
                                 style = {AGILITYSTYLE.listIcon}
