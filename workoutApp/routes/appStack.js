@@ -6,7 +6,9 @@ import HomeScreen from '../pages/home.js' ;
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack' ;
 import StrengthListScreen from '../pages/strengthList.js';
-import GenerateStrengthSCreen from '../pages/generateStrength.js';
+import GenerateStrengthScreen from '../pages/generateStrength.js';
+import AgilityListScreen from '../pages/agilityList.js';
+import FlexListScreen from '../pages/flexibilityList.js';
 
 const screens = {
   Home: {
@@ -70,7 +72,7 @@ const screens = {
     }
   },
   GenerateStrength: {
-    screen: GenerateStrengthSCreen,
+    screen: GenerateStrengthScreen,
     navigationOptions: {
       headerTitle: '',
         headerStyle: {
@@ -78,7 +80,39 @@ const screens = {
         },
         headerTintColor: 'white'
     }
-  }
+  },
+  AgilityList: {
+    screen: AgilityListScreen,
+    navigationOptions: {
+        headerTitle: '',
+        headerStyle: {
+            backgroundColor: '#080808',
+        },
+        headerTintColor: 'white'
+    }
+  },
+  /*
+  GenerateAgility: {
+    screen: GenerateAgilityScreen,
+    navigationOptions: {
+      headerTitle: '',
+        headerStyle: {
+            backgroundColor: '#080808',
+        },
+        headerTintColor: 'white'
+    }
+  },*/
+  FlexList: {
+    screen: FlexListScreen,
+    navigationOptions: {
+        headerTitle: '',
+        headerStyle: {
+            backgroundColor: '#080808',
+        },
+        headerTintColor: 'white'
+    }
+  },
+
 
 }
 
