@@ -4,7 +4,7 @@ import Modal from 'react-native-modal';
 import { STRENGTHSTYLE } from '../stylesheets/strengthStyle';
 import { strengthWorkouts } from '../data/workouts';
 
-export default function GenerateStrengthSCreen()
+export default function GenerateStrengthScreen()
 {
     const [genModalState, setGenModalState] = useState(false) ;
     const [workoutState, setWorkoutState] = useState([]) ;
