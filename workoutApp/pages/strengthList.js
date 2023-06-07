@@ -31,9 +31,12 @@ export default function StrengthListScreen() {
                         //This modal is the page that shows the description of the exercise and how to do it
                         isVisible={descModalState}
                         onBackdropPress={() => { setDescModalState(false); }}
+                        backdropOpacity={0.95}
                     >
-                        <SafeAreaView>
-                            <Text style={STRENGTHSTYLE.exercise}>{curDesc}</Text>
+                        <SafeAreaView style={STRENGTHSTYLE.descriptionModal}>
+                            <ScrollView>
+                                <Text style={STRENGTHSTYLE.exercise}>{curDesc}</Text>
+                            </ScrollView>
                         </SafeAreaView>
                     </Modal>
                 </SafeAreaView>
